@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ANSH</title>
+  <style>
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+    #body{
+      width: 100%;
+      height: 100vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("1.jpg");
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+#owl{
+  position: absolute;
+  background: none;
+  height: 3vh;
+  width: 60%;
+  top: 10px;
+  right: 10px;
+}
+#btn{
+  font-size: 25px;
+  font-family: Times New Roman;
+  background: none;
+  border: none;
+}
+#owl2{
+  padding: 20px;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  position: absolute;
+  background: black;
+  bottom: 400px;
+ width: 600px;
+  height: 50vh;
+  border-radius: 60px;
+  transition: 2s ease-in-out;
+}
+
+ 
+#owl2 input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: none;
+  color: lime ;
+  
+}
+
+a{
+  color: red;
+}
+#s{
+  font-size: 20px;
+  color: red;
+  background: lime;
+  border: 1px black;
+  border-radius: 4px;
+  bottom: 350px;
+  left: 200px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+
+#l{
+  font-size: 30px;
+  color: ORANGE;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 120px;
+  padding-right: 80px;
+  border-radius: 40px;
+  background: none;
+  border: none;
+  
+  
+}
+
+#li{
+  position: absolute;
+  font-size: 30px;
+  color: ORANGE;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 120px;
+  padding-right: 120px;
+  border-radius: 40px;
+  background: none;
+  border: none;
+  right: 1px;
+  
+}
+  
+  
+  
+#owl3{
+  display: ;
+  padding: 20px;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  position: absolute;
+  background: black;
+  bottom: 1900px;
+ width: 600px;
+  height: 50vh;
+  border-radius: 60px;
+  transition: 2s ease-in-out;
+}
+#owl3 input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: none;
+  color: lime ;
+  
+}
+#rto{
+  padding-left: 150px;
+  padding-top: 100px;
+}
+
+
+
+  </style>
+  
+  
+</head>
+
+<body id="body">
+
+<div id="owl">
+  <button id="btn">| HOME </button>
+  <button id="btn">| ABOUT </button>
+  <button id="btn">| CONTACT US </button>
+  <button id="btn" onclick="login()">| LOGIN |</button>
+</div>
+
+<div id="owl2">
+  
+  <button id="l" onclick="log3()">LOGIN</button>|
+    <button id="li" onclick="log2()">REGISTER</button> <br><br><br>
+  
+  <h1 align="center"> LOGIN </h1><br><br>
+  <br><br><br>
+  <h3>NAME :</h3>
+  <input type = "text" placeholder="NAME "><br><br> <br><br><br>
+  <h3>E-MAIL :</h3>
+    <input type = "email" placeholder="E-MAIL">
+    <br><br> <br><br><br>
+    
+    <h3>PASSWORD :</h3>
+    <input type = "password" placeholder="PASSWORD">
+  <br><br><br> <br><br><br>
+  <a href = "####">Forget Password</a>
+  <div id="rto">
+  <button type="submit" id = "s">LOG-IN</button>
+  </div>
+  
+</div>
+
+<div id="owl3">
+  <button id="l" onclick="log3()">LOGIN </button>|
+    <button id="li" onclick="log2()">REGISTER</button> <br><br><br>
+  
+  <h1 align="center"> REGISTER </h1><br><br>
+  
+  <h3>FIRST NAME :</h3>
+  <input type = "text" placeholder="FIRST NAME "><br><br> <br><br><br>
+  <h3>LAST NAME :</h3>
+    <input type = "text" placeholder="LAST NAME"> <br><br><br>
+    <br><br>
+    
+    <h3>PHONE NO.:</h3>
+    <input type = "1" placeholder="PHONE NO."> <br><br><br>
+  <br><br>
+  
+     <h3>E-MAIL:</h3>
+    <input type = "1" placeholder="E-MAIL"> <br><br><br>
+  <br><br>
+  
+  <div id="rto">
+  <button type="submit" id = "s">REGISTER</button>
+  </div>
+  
+</div>
+
+
+
+
+<script>
+
+
+alert("CREATED BY ANSH YADAV")
+alert("YOU NEED TO FOLLOW INSTRUCTIONS TO USE THIS PAGE.")
+alert("LOGIN BUTTON ON THE TOP RIGHT IS USED FOR FORM VISIBILITY.")
+alert("LOGIN BUTTON ON THE FORM IS USED TO SELECT FORM TYPE.THESE ARE :- ")
+alert("LOGIN TYPE AND REGISTER TYPE")
+
+  function login(){
+     var kill = document.getElementById("owl2")
+     var ill = document.getElementById("owl3")
+     
+     var op= kill.style.display
+     
+     ill.style.display="none";
+     kill.style.display="none";
+     kill.style.bottom="400px";
+     ill.style.bottom="1900px";
+     
+     
+     if( op == "none"){
+       kill.style.display="block";
+     }
+     }
+     
+     function log2(){
+     var login = document.getElementById("owl3");
+     login.style.display="block"
+     login.style.bottom="400px"
+       
+       document.getElementById("owl2").style.bottom="1900px"
+       
+     }
+     function log3(){
+       var login=document.getElementById("owl3");
+       login.style.bottom="1900px"
+       document.getElementById("owl2").style.bottom="400px"; 
+     }
+</script>
+</body>
+
+</html>
